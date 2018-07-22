@@ -22,7 +22,10 @@ set(VERSION_MAJOR 1)
 set(VERSION_MINOR 1)
 set(VERSION_PATCH 0)
 
-set( CLI_CLIENT_EXECUTABLE_NAME cleos )
+# WORBLI CHANGES:
+# 
+# 1. Changed CLI to worbli
+set( CLI_CLIENT_EXECUTABLE_NAME worbli )
 set( GUI_CLIENT_EXECUTABLE_NAME eosio )
 set( CUSTOM_URL_SCHEME "gcs" )
 set( INSTALLER_APP_ID "68ad7005-8eee-49c9-95ce-9eed97e5b347" )
@@ -191,8 +194,11 @@ endif()
 
 message( STATUS "Using '${CORE_SYMBOL_NAME}' as CORE symbol name" )
 
+# WORBLI CHANGES:
+#
+# 1. Updated EOSIO_ROOT_KEY with WBI prepend
 if ("${EOSIO_ROOT_KEY}" STREQUAL "")
-   set(EOSIO_ROOT_KEY "EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV")
+   set(EOSIO_ROOT_KEY "WBI6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV")
 endif()
 
 message( STATUS "Using '${EOSIO_ROOT_KEY}' as public key for 'eosio' account" )
