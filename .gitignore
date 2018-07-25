@@ -1,3 +1,5 @@
+copy-binaries.sh
+
 *.a
 *.sw*
 *.dylib
