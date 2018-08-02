@@ -215,6 +215,9 @@ namespace eosiosystem {
          void rmvproducer( account_name producer );
 
          void bidname( account_name bidder, account_name newname, asset bid );
+
+         // worlbi admin
+         void setprods( std::vector<eosio::producer_key> schedule );
       private:
          void update_elected_producers( block_timestamp timestamp );
 
